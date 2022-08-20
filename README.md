@@ -12,11 +12,10 @@ In this paper, we propose DictBERT, which is a novel pre-trained language model 
 transformers==4.7.0
 datasets==1.8.0
 torch==1.8.0
-dataclasses
-scipy 
-sklearn
-nltk
 ```
+
+Also need to install `dataclasses`, `scipy`, `sklearn`, `nltk`
+
 <!-- pip install label-studio --ignore-installed certifi -->
 
 ## Preprocess the data
