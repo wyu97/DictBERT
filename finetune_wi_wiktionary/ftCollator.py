@@ -1,7 +1,6 @@
-import random
 import logging
 from dataclasses import dataclass
-from typing import Any, Callable, Dict, List, NewType, Optional, Tuple, Union
+from typing import Any, Callable, Dict, List, NewType, Optional, Union
 
 import torch
 import torch.nn.functional as F
@@ -63,8 +62,6 @@ class DataCollatorWithPadding:
         elif features[0].get('label') is not None:
             batch_labels = torch.tensor([f['label'] for f in features])
         else:
-            # raise NameError('No labels are provided!') 
-            # logger.warning('No labels are provided! Set into TEST mode!')
             return {"input_ids": batch_input_ids, 
                 "attention_mask": batch_attention_mask,
                 "token_type_ids": batch_token_type_ids,
