@@ -38,7 +38,12 @@ bash load_preprocess.sh
 
 ## Download the checkpoint
 
-https://huggingface.co/wyu1/DictBERT
+-- Huggingface Hub [\[link\]](https://huggingface.co/wyu1/DictBERT)
+
+```
+git lfs install
+git clone https://huggingface.co/wyu1/DictBERT
+```
 
 ## Run experiments on GLUE
 
